@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "@plansul/root-config": "//localhost:9000/plansul-root-config.js",
+    "@plansul/app-common-header": "//localhost:8100/plansul-app-common-header.js",
+    "@plansul/app-common-footer": "//localhost:8101/plansul-app-common-footer.js",
+    "@plansul/app-account": "//localhost:8201/plansul-app-account.js",
+    "@plansul/app-cart": "//localhost:8202/plansul-app-cart.js",
+    "@plansul/app-product": "//localhost:8203/plansul-app-product.js",
+    "@plansul/app-shop": "//localhost:8204/plansul-app-shop.js",
+    "@plansul/util-state": "//localhost:8301/plansul-util-state.js",
+    "@plansul/util-ui": "//localhost:8302/plansul-util-ui.js"
+  }
+}
