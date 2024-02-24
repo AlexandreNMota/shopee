@@ -34,12 +34,21 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
+    <script>
+      var process = {
+        env: {
+          NODE_ENV: "production",
+        },
+      };
+    </script>
     <script type="systemjs-importmap">
       {
         "imports": {
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
           "react": "https://unpkg.com/react@18/umd/react.production.min.js",
-          "react-dom": "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+          "react-dom": "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js",
+          "zustand": "https://unpkg.com/zustand@3.6.9/system/index.js",
+          "zustand/middleware": "https://unpkg.com/zustand@3.6.9/system/middleware.js"
         }
       }
     </script>

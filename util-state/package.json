@@ -57,7 +57,7 @@
     "react-dom": "^17.0.2",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1",
-    "zustand": "^4.5.1"
+    "zustand": "^3.6.9"
   },
   "types": "dist/plansul-util-state.d.ts"
 }
