@@ -2,7 +2,7 @@
 
 ## Root Config
 
--root
+- root
 
 ## Aplicações Principais
 
