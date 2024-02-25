@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "single-spa": "/assets/libs/single-spa.js",
+    "react": "/assets/libs/react.js",
+    "react-dom": "/assets/libs/react-dom.js",
+    "zustand": "https://unpkg.com/zustand@3.6.9/system/index.js",
+    "zustand/middleware": "https://unpkg.com/zustand@3.6.9/system/middleware.js"
+  }
+}

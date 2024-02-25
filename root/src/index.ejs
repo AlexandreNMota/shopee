@@ -23,7 +23,10 @@
     />
     <meta name="importmap-type" content="systemjs-importmap" />
 
-    <script type="systemjs-importmap" src="./local-map.json"></script>
+    <script
+      type="systemjs-importmap"
+      src="/assets/maps/local-map.json"
+    ></script>
     <link
       rel="preload"
       href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
@@ -31,7 +34,7 @@
     />
 
     <% if (isLocal) { %>
-    <script type="systemjs-importmap" src="./app-map.json"></script>
+    <script type="systemjs-importmap" src="/assets/maps/app-map.json"></script>
     <% } %>
 
     <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
