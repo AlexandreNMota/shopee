@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Root Config</title>
+    <title>Shopee</title>
 
     <!--
     Remove this if you only support browsers that support async/await.
@@ -17,10 +17,10 @@
     This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
     Learn more about CSP policies at https://content-security-policy.com/#directive
   -->
-    <meta
+    <!-- <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';"
-    />
+      content="default-src *; script-src  * 'unsafe-inline' 'unsafe-eval' blob: https: localhost:* http: localhost:*; connect-src https: localhost:* http: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src *"
+    /> -->
     <meta name="importmap-type" content="systemjs-importmap" />
 
     <script
@@ -32,6 +32,27 @@
       href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
       as="script"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
 
     <% if (isLocal) { %>
     <script type="systemjs-importmap" src="/assets/maps/app-map.json"></script>
@@ -47,6 +68,8 @@
     <% } %>
   </head>
   <body>
+    <header id="single-spa-application:@plansul/app-common-header"></header>
+    <footer id="single-spa-application:@plansul/app-common-footer"></footer>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <script>
       System.import("@plansul/root-config");

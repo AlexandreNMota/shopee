@@ -23,6 +23,7 @@ module.exports = (webpackConfigEnv, argv) => {
           directory: path.join(__dirname, "assets", "maps"), // Caminho para a pasta assets/libs
           publicPath: "/assets/maps/", // Caminho público para a pasta
         },
+        "src",
       ],
     },
     // modify the webpack config however you'd like to by adding to this object
